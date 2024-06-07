@@ -1,5 +1,5 @@
 import { Box, Button, Container, Flex, Heading, HStack, Image, Input, InputGroup, InputLeftElement, Text, VStack } from "@chakra-ui/react";
-import { SearchIcon } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa"; // Use FaSearch instead of SearchIcon
 
 const events = [
   {
@@ -38,7 +38,7 @@ const EventInfo = () => {
         </HStack>
         <HStack spacing={4}>
           <InputGroup>
-            <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
+            <InputLeftElement pointerEvents="none" children={<FaSearch color="gray.300" />} />
             <Input type="text" placeholder="Search" />
           </InputGroup>
           <Button colorScheme="blue">Create event</Button>
@@ -49,7 +49,7 @@ const EventInfo = () => {
         <Heading>Discover upcoming events</Heading>
         <Text>Find virtual and in-person events you love</Text>
         <InputGroup size="lg" mb={6}>
-          <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
+          <InputLeftElement pointerEvents="none" children={<FaSearch color="gray.300" />} />
           <Input type="text" placeholder="Search events by name, category, city, or date" />
         </InputGroup>
         {events.map((event, index) => (
