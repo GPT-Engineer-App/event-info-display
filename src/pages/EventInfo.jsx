@@ -1,5 +1,5 @@
 import { Box, Button, Container, Flex, Heading, HStack, Image, Input, InputGroup, InputLeftElement, Text, VStack } from "@chakra-ui/react";
-import { SearchIcon } from "@chakra-ui/icons";
+import { SearchIcon } from "react-icons/fa";
 
 const events = [
   {
